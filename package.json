@@ -8,6 +8,7 @@
     "dev:server": "json-server server.json -w -d 500",
     "build": "tsc && vite build",
     "lint": "eslint src --ext .ts,.tsx",
+    "lint:fix": "eslint src --ext .tsx,.ts --fix",
     "preview": "vite preview"
   },
   "dependencies": {

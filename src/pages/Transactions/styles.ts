@@ -1,4 +1,4 @@
-import { styled } from "styled-components";
+import { styled } from 'styled-components'
 
 export const TransactionsContainer = styled.main`
   width: 100%;
@@ -15,7 +15,7 @@ export const TransactionsTable = styled.table`
 
   td {
     padding: 1.25rem;
-    background-color: ${props => props.theme['gray-700']};
+    background-color: ${(props) => props.theme['gray-700']};
 
     &:first-child {
       border-top-left-radius: 6px;
@@ -34,5 +34,8 @@ interface priceHightlightProps {
 }
 
 export const PriceHightlight = styled.span<priceHightlightProps>`
-  color: ${props => props.variant === "income" ? props.theme["green-300"] : props.theme["red-300"]};
+  color: ${(props) =>
+    props.variant === 'income'
+      ? props.theme['green-300']
+      : props.theme['red-300']};
 `
