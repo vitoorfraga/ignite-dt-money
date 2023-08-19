@@ -15,8 +15,6 @@ export const HeaderContent = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-
-  background-color: red;
 `
 
 export const NewTransactionButton = styled.button `
